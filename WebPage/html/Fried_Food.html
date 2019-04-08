@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Order</title>
+        <link rel="stylesheet" href="../css/Fried_Food.css">
+        <script src="../script/Fried_Food.js"></script>
+    </head>
+    <body>
+
+    <!--Navigation pane-->
+    <div class="food_nav">
+        <div class="dropdown">
+            <a href="Fried_Food.html" class="dropbtn">Fried_Food</a>
+            <div class="dropdown-content">
+                <a href="#">Vegetarian</a>
+                <a href="#">Non-Vegetarian</a>
+            </div>
+        </div>
+
+        <a href="#" class="food_option">Link 1</a>
+        <a href="#" class="food_option">Link 2</a>
+        <a href="#" class="food_option">Link 3</a>
+    </div>
+    <!-- ----------------------- -->
+<div class="left_side">
+    <div class="images">
+        <img src="../images/Fried%20food/tofu6.jpg" alt="plain tofu">
+        <div class="plain_tofu">
+            <p class="food_name">Plain tofu block<br>
+                </p>
+            <span class="price_tag">$1.75 each</span> <br>
+            <form action="#" name="form1" >
+                <table>
+                    <tr>
+                        <td>
+                            <input id="plain_tofu_big" type="number" value="0" placeholder="$0" min="0" oninput="display_plain_tofu_big(this)">
+                            <p class="display_price">$<span id="display_plain_tofu_big">0</span></p>
+                            <button onclick="checkout()">Add to Card</button>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="images">
+        <img src="../images/Fried%20food/tofu6.jpg" alt="plain tofu">
+        <div class="plain_tofu">
+            <p class="food_name">Plain tofu<br>
+            </p>
+            <span class="price_tag">6 for $1</span> <br>
+            <form action="#" name="form2">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="plain_tofu" type="number" value="0" placeholder="$0" min="0" oninput="display_plain_tofu(this)">
+                            <p class="display_price"><span id="display_plain_tofu">0</span> Pieces</p>
+                            <button onclick="checkout()">Add to Card</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="images">
+        <img src="../images/Fried%20food/tofu14.jpg" alt="Cilantro tofu">
+        <div class="plain_tofu">
+            <p class="food_name">Onion tofu<br>
+            </p>
+            <span class="price_tag">6 for $1</span><br>
+            <form action="" name="form2">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="onion_tofu" type="number" value="0" placeholder="$0" min="0" oninput="display_onion_tofu(this)">
+                            <p><span id="display_onion_tofu">0</span> Pieces</p>
+                                <button onclick="checkout()">Add to Card</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="images">
+        <img src="../images/Fried%20food/tofu13.jpg" alt="Cilantro tofu">
+        <div class="plain_tofu">
+            <p class="food_name">Cilantro tofu<br>
+            </p>
+            <span class="price_tag">6 for $1</span><br>
+            <form action="#" name="form2">
+                <table>
+                    <tr>
+                        <td>
+                            <input id="cilantro_tofu" type="number" value="0" placeholder="$0" min="0" oninput="display_cilantro_tofu(this)">
+                            <p class="display_price"><span id="display_cilantro_tofu">0</span> Pieces</p>
+                            <button onclick="checkout()">Add to Card</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- Trigger/Open The Modal -->
+-
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2> <center>In your cart</center></h2>
+            <div class="plain_tofu">
+                <form action="#" name="form2">
+                    <table>
+                        <tr>
+                            <td>
+                                  <p id="display_plain_big_modal"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="display_plain_modal"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="display_onion_modal"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="display_cilantro_modal"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Your total is: $<span id="total">0</span></p>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Total test-->
+
+
+</div>
+
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
